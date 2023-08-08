@@ -1,0 +1,34 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header title={SITE_TITLE} />
+		<main>
+			<h1>Hello,Welcome to my blog!</h1>
+			<p>
+				Welcome to the official <a href="https://joeazzara.com">Joe</a> This blog is a start page for me. This
+				a personal website, blog, and  portfolio with Astro.
+			</p>
+			
+
+			
+			
+			<p>
+				Looking for my other sites Check out <a
+					href="https://github.com/joeazzara"
+					>astro-blog-template
+				</a> by <a href="https://twitter.com/joeazzara">Joe Azzara</a>.
+			</p>
+		</main>
+		<Footer />
+	</body>
+</html>
